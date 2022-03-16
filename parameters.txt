@@ -1,11 +1,11 @@
 # apy
 python train.py --dataset APY --syn_num 500 --attSize 64 --nz 0 --nclass_all 32 --nclass_seen 20 --k 30 --gpu 0 --nepoch 100 --test_epoch 1 --cr 1 --temp 0.06 --reg 20 --d 0.007 --syn_t 6
 # awa1 
-python train.py --dataset AWA1 --syn_num 600 --attSize 85 --nz 3 --nclass_all 50 --nclass_seen 40 --gpu 2 --k 147 --begin_step 50 --test_epoch 1 --cr 10 --temp 0.06 --reg 20 --lr 0.0002 --d 0.0001 --nepoch 400 --syn_t 13 > syn_k/awa1_syn600.txt &
+python train.py --dataset AWA1 --syn_num 600 --attSize 85 --nz 3 --nclass_all 50 --nclass_seen 40 --gpu 2 --k 147 --begin_step 50 --test_epoch 1 --cr 10 --temp 0.06 --reg 20 --lr 0.0002 --d 0.0001 --nepoch 400 --syn_t 13
 # awa2
 python train.py --dataset AWA2 --syn_num 600 --attSize 85 --nz 10 --nclass_all 50 --nclass_seen 40 --gpu 2 --k 110 --test_epoch 1 --temp 0.07 --reg 20 --cls_weight 0.2 --begin_step 100 --nepoch 400 --syn_t 1
 # cub
-python train.py --dataset CUB --syn_num 200  --attSize 1024 --class_embedding sent  --nz 5 --nclass_all 200 --nclass_seen 150 --lr 0.001 --use_classify True --batch_size 2048 --temp 0.07 --nepoch 1000 --test_epoch 1 --reg 5 --cr 10 --gpu 3 > ablation/cub_5-10.txt &
+python train.py --dataset CUB --syn_num 200  --attSize 1024 --class_embedding sent  --nz 5 --nclass_all 200 --nclass_seen 150 --lr 0.001 --use_classify True --batch_size 2048 --temp 0.07 --nepoch 1000 --test_epoch 1 --reg 5 --cr 10 --gpu 3
 # flo
 --dataset FLO --syn_num 4000 --attSize 1024 --nz 5 --nclass_all 102 --nclass_seen 82 --gpu 1 --test_epoch 1 --nepoch 501 --use_classify True --cls_weight 0.5  --begin_step 50
 # sun
